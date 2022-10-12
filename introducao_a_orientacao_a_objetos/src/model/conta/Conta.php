@@ -2,7 +2,7 @@
     namespace alura\banco\model\conta;
     use alura\banco\model\conta\Conta;
     #uma classe é um modelo do objeto
-    class Conta {
+    abstract class Conta {
         #atributos do objeto
         private $titular;
         protected float $saldo;
@@ -26,7 +26,7 @@
         #Métodos da classe
         public function sacar(float $valorASacar): void {
 
-            $tarifaDeSaque = $valorASacar * 0.05;
+            $tarifaDeSaque = $valorASacar * $this->percentualTarifa();
 
             $valorSaque = $valorASacar + $tarifaDeSaque;
 
@@ -76,4 +76,6 @@
         public static function recuperaNumeroDeContas(): int {
             return self::$numeroDeContas;
         }
+
+        abstract protected function percentualTarifa(): float;
     }
