@@ -12,7 +12,7 @@ $conta = new Conta(
         new Cpf('123.456.789-89'),
         'Isis Galdino',
         new Endereco('Petrópolis', 'bairro teste', 'rua teste', '77')
-    )
+    ), 2
     );
 
     $conta->depositar(500);
