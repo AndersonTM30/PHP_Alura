@@ -5,18 +5,13 @@
     class Conta {
         #atributos do objeto
         private $titular;
-        private float $saldo;
+        protected float $saldo;
         private static $numeroDeContas = 0;# atributo estático da classe para acesso geral dos objetos
-        /**
-         * @var int tipo 1 = Conta Corrente; 2 = Conta Poupança
-         */
-        private int $tipo;
 
         #método construtor para inicializar os atributos
-        public function __construct(Titular $titular, $tipo) {
+        public function __construct(Titular $titular) {
             $this->titular = $titular;
             $this->saldo = 0;#definindo um valor padrão para o atributo
-            $this->tipo = $tipo;
 
             self::$numeroDeContas++;
         }
@@ -30,11 +25,8 @@
 
         #Métodos da classe
         public function sacar(float $valorASacar): void {
-            if($this->tipo === 1) {
-                $tarifaDeSaque = $valorASacar * 0.05;
-            } else {
-                $tarifaDeSaque = $valorASacar * 0.03;
-            }
+
+            $tarifaDeSaque = $valorASacar * 0.05;
 
             $valorSaque = $valorASacar + $tarifaDeSaque;
 
