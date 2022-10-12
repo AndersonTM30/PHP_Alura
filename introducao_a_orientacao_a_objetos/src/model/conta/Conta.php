@@ -25,11 +25,14 @@
 
         #Métodos da classe
         public function sacar(float $valorASacar): void {
+            $tarifaDeSaque = $valorASacar * 0.05;
+            $valorSaque = $valorASacar + $tarifaDeSaque;
+
             if($valorASacar > $this->saldo) {
                 echo "Saldo indisponível!";
                 return;
             } 
-            $this->saldo -= $valorASacar;
+            $this->saldo -= $valorSaque;
         }
         # métodos do tipo void são utilizados quando não tem retorno
         public function depositar(float $valorADepositar): void {
