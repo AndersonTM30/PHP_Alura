@@ -1,7 +1,7 @@
 <?php
     namespace alura\banco\model;
     use alura\banco\model\Pessoa;
-    class Pessoa {
+    abstract class Pessoa {
         protected string $nome;
         private Cpf $cpf;
 
