@@ -1,5 +1,6 @@
 <?php
     namespace alura\banco\model;
+    use alura\banco\model\AcessoPropriedades;
 
     /**
      * Class Endereco
@@ -11,6 +12,7 @@
      */
 
     final class Endereco {
+        use AcessoPropriedades;
         private string $cidade;
         private string $bairro;
         private string $rua;
@@ -41,12 +43,6 @@
 
         public function __toString(): string {
             return "{$this->rua}, {$this->numero}, {$this->bairro}, {$this->cidade}";
-        }
-
-        public function __get(string $nomeAtributo) {
-            //adiciona a primeira letra maiúscula e concatena com o nome recupera
-            $metodo = 'recupera' . ucfirst($nomeAtributo);
-            return $this->$metodo;
         }
 
         public function __set($nomeAtributo, $valor) {
