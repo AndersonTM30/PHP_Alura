@@ -1,6 +1,6 @@
 <?php
     namespace alura\banco\model;
-    use alura\banco\model\Endereco;
+
     class Endereco {
         private string $cidade;
         private string $bairro;
@@ -28,5 +28,9 @@
 
         public function recuperaNumero(): string {
             return $this->numero;
+        }
+
+        public function __toString(): string {
+            return "{$this->rua}, {$this->numero}, {$this->bairro}, {$this->cidade}";
         }
     }
