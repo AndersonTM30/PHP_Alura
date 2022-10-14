@@ -1,7 +1,7 @@
 <?php
     namespace alura\banco\model;
     use alura\banco\model\Cpf;
-    class Cpf {
+    final class Cpf {
         private string $cpf;
 
         public function __construct(string $cpf) {
