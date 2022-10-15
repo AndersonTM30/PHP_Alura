@@ -17,7 +17,7 @@
 
         public function buscar(string $url): array {
             // faz a requisição para a página 
-            $response = $this->httpClient->request('GEt', $url);
+            $response = $this->httpClient->request('GET', $url);
             // retorna o corpo da requisição
             $html = $response->getBody();
             // carregando o html

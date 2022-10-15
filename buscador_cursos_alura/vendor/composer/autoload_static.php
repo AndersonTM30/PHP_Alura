@@ -38,7 +38,7 @@ class ComposerStaticInit851d11870f0360b690ca8567e9de392d
         ),
         'A' => 
         array (
-            'Andersondev30\\BuscadorCursos\\' => 29,
+            'Alura\\BuscadorDeCursos\\' => 23,
         ),
     );
 
@@ -84,7 +84,7 @@ class ComposerStaticInit851d11870f0360b690ca8567e9de392d
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
-        'Andersondev30\\BuscadorCursos\\' => 
+        'Alura\\BuscadorDeCursos\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
