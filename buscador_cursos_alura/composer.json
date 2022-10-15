@@ -1,0 +1,21 @@
+{
+    "name": "andersondev30/buscador_cursos",
+    "description": "Projeto que busca os cursos no site da Alura",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Andersondev30\\BuscadorCursos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AndersonTM30",
+            "email": "andersondev30@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.5",
+        "symfony/dom-crawler": "^4.2"
+    }
+}
