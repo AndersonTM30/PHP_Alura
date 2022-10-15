@@ -15,5 +15,5 @@
     $cursos = $buscador->buscar('cursos-online-programacao/php');
     // percorrendo e imprimindo os cursos dentro da página da alura
     foreach($cursos as $curso) {
-        echo $curso . PHP_EOL;
+        echo exibeMensagem($curso);
     }
