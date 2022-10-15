@@ -3,7 +3,7 @@
         'name' => 'andersondev30/buscador_cursos',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '0a738b759f097e7f12b6747c7cae6f02f4a80c5e',
+        'reference' => 'd540fb42848da5a286f586cb18f57f3817e53c25',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'andersondev30/buscador_cursos' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '0a738b759f097e7f12b6747c7cae6f02f4a80c5e',
+            'reference' => 'd540fb42848da5a286f586cb18f57f3817e53c25',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
